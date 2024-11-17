@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+
+p, h1, h2, h3 {
+    overflow-wrap: break-word;
+}
+
+p {
+    hyphens: auto;
+    text-wrap: pretty;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+:root {
+    --primary-purple: hsl(292, 42%, 14%);
+
+    --secondary-light-lilac-bg: hsl(279, 100%, 97%);
+    --secondary-lilac: hsl(280, 81%, 54%);
+}
+
+h1 {
+    color: var(--primary-roxo);
+}
+
+footer { 
+    font-size: 11px; text-align: center; 
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+}
