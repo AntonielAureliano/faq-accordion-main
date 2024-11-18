@@ -14,26 +14,59 @@ p {
     text-wrap: pretty;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-color: var(--secondary-light-pink-bg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: var(--font-family-defaut);
+    justify-content: center;
+    line-height: 1.5;
+    align-items: center;
+    min-height: 100vh;
 }
 
 :root {
-    --primary-purple: hsl(292, 42%, 14%);
+    --primary-dark-purple: hsl(292, 42%, 14%);
+    --primary-white: hsl(0, 0%, 100%);
 
-    --secondary-light-lilac-bg: hsl(279, 100%, 97%);
+    --secondary-light-pink-bg: hsl(275, 100%, 97%);
     --secondary-lilac: hsl(280, 81%, 54%);
+    --secondary-grayish-purple: hsl(292, 16%, 49%);
+
+    --font-family-defaut: 'Work Sans', sans-serif;
+}
+
+main {
+    background-color: var(--primary-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 450px;
+    padding: 25px;
+}
+
+details > summary {
+    list-style: none;
+    display: inline-block;
 }
 
 h1 {
-    color: var(--primary-roxo);
+
 }
 
 footer { 
-    font-size: 11px; text-align: center; 
+    font-size: 0.6875rem; 
+    text-align: center; 
 }
 footer a { 
     color: hsl(228, 45%, 44%); 
