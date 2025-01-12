@@ -51,14 +51,45 @@ main {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    max-width: 450px;
+    max-width: 600px;
     padding: 25px;
 }
 
-details > summary {
-    display: inline-block;
+.question:not(:last-child) {
+    border-bottom: solid 1px var(--secondary-light-pink-bg);
+}
+
+.question > summary {
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: 700;
+    gap: 30px;
+    justify-content: space-between;
     list-style: none;
+    padding: 20px 0 20px 0;
+    text-align: left;
+    min-width: 500px;
+}
+
+.question > summary:hover {
+    color: var(--secondary-lilac);
+    cursor: pointer;
+}
+
+.question > p {
+    color: var(--secondary-grayish-purple);
+    margin-bottom: 15px;
+    max-width: 50ch;
+}
+
+.question > summary > p, .question-icon {
+    align-self: center;
+}
+
+.question-icon {
+    background-image: url('./assets/images/icon-plus.svg');
+    height: 30px;
+    width: 30px;
 }
 
 h1 {
