@@ -24,6 +24,7 @@ body {
     background-color: var(--secondary-light-pink-bg);
     background-repeat: no-repeat;
     background-size: 100%;
+    color: var(--primary-dark-purple);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -56,12 +57,23 @@ main {
 }
 
 details > summary {
-    list-style: none;
     display: inline-block;
+    list-style: none;
 }
 
 h1 {
+    font-size: 3rem;
+}
 
+h1::before {
+    align-self: top;
+    background-image: url('./assets/images/icon-star.svg');
+    background-size: cover;
+    content: "";
+    display: inline-block;
+    height: 35px;
+    margin-right: 20px;
+    width: 35px;
 }
 
 footer { 
